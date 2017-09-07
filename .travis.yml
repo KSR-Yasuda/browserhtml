@@ -2,11 +2,11 @@ language: node_js
 node_js:
 - 'stable'
 after_success: npm run-script deploy
-branches:
-  only:
-  - master
-  # Version tags
-  - /^\d+\.\d+(\.\d+)?$/
+#branches:
+#  only:
+#  - master
+#  # Version tags
+#  - /^\d+\.\d+(\.\d+)?$/
 env:
   global:
     - GH_REF: github.com/browserhtml/browserhtml.git
